@@ -22,12 +22,13 @@ pd.set_option('precision', 0)
 
 
 # Choose between own squad or scouting results
-choice = buttonbox ("Please choose data source:", 
+choice = buttonbox ("Please choose data source:",
                     title = "Data source selection", choices = ["Own Squad", "Scouting Results"])
 if choice == "Own Squad":
-    df = pd.read_html(r"C:\\Users\\stuar\\Documents\\Sports Interactive\\Football Manager 2020\\html\\squad_python.html",skiprows=0,)[0]    
+    df = pd.read_html(r"C:/Users/Pottemuld/Documents/Sports%20Interactive/Football%20Manager%202020/html/attributes_view.html"
+                      r".html",skiprows=0,)[0]
 elif choice == "Scouting Results":
-    df = pd.read_html(r"C:\\Users\\stuar\\Documents\\Sports Interactive\\Football Manager 2020\\html\\scouting_python.html",skiprows=0,)[0]
+    df = pd.read_html(r"C:/Users/Pottemuld/Documents/Sports%20Interactive/Football%20Manager%202020/html/statistics_view.html",skiprows=0,)[0]
 
 
 # In[83]:
